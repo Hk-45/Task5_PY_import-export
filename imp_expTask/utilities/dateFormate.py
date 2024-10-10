@@ -8,7 +8,7 @@ def customDate():
 #convertDate = re.sub('[^dd][mm][yyyy]','-',enterDate)
 
     print(f'Date = {dateToday}')
-    convertDate = dateToday.strftime('%d'),dateToday.strftime('%B'),dateToday.strftime('%Y')
+    convertDate = dateToday.strftime('%d-%m-%Y')
     return {convertDate}
     
 
