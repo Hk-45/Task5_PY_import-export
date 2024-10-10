@@ -2,11 +2,11 @@
 import re
 
 
-def removeText(enterText):
+def removeText():
     enterText = input('Enter any text =  ')
     num = re.sub('[^0-9]','',enterText) 
     
-    if isinstance(enterText, str and int):
+    if isinstance(enterText, str):
         return {
             'status' : 'success',
             'result' :  num,

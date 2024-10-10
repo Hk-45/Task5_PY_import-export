@@ -2,7 +2,7 @@ from utilities.textNum import removeText
 from utilities.dateFormate import customDate
 def main():
     print('main function')
-    userText = removeText(str)
+    userText = removeText()
     print(f'onlyReturnsNumbers = {userText}')
 
     print()
