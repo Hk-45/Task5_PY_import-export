@@ -3,10 +3,10 @@ import re
 
 
 def removeText():
-    enterText = input('Enter any text =  ')
+    enterText = input('Enter any text with numbers  =  ')
     num = re.sub('[^0-9]','',enterText) 
     
-    if isinstance(enterText, str):
+    if num and num != None and num != '':
         return {
             'status' : 'success',
             'result' :  num,
@@ -14,7 +14,7 @@ def removeText():
     else :
         return {
             'status' : 'error',
-            'result': 'Enter the text'
+            'result': 'Enter text with numbers'
         }
        
         
